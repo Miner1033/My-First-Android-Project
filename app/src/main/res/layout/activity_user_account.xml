@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_info_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/user_info_logo_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/user_profile" />
+
+    <TextView
+        android:id="@+id/user_info_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Your Information"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/user_info_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mr. XYZ"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/user_info_email_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="xyz123@gmail.com"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/user_info_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="01800000000"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/user_info_order_count_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No. of orders: 20"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <TextView
+        android:id="@+id/user_info_address_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tilaghor, Sylhet"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/editbox_background" />
+
+</LinearLayout>

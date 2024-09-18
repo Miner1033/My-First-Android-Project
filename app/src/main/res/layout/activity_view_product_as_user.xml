@@ -1,0 +1,626 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/main_background">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#D9E4DD"
+        android:src="@drawable/search" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_view"
+        android:layout_marginBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- First Product -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bergerjpg" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Berger Paint "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10,000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20KG red color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    />
+            </LinearLayout>
+
+            <!-- Second Product -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/brush_image" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Brush"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wooden made"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <!-- Third Product -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fevicol_glue" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fevical Glue"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30gm glue"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <!-- Fifth Product -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/screw" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Screw Diver"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="minus 7 inch"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+                <ImageView
+                    android:id="@+id/image_view_product"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bkash" />
+                <ImageView
+                    android:id="@+id/image_view_prod"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/nagad" />
+
+
+            </LinearLayout>
+            <!-- Fifth Product -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product5"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/asian_paint" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Asian Paint"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Red color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product6"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bergerrobbi" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Berger Paint "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12,000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20KG blue color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product7"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/multiplescrew" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Multi.Screw "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="30 catagory"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product8"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/screw_set" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Screw Set "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8,000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Different shape"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product9"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/thineer" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thiner "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6,000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="40"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="60gm"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+
+                <ImageView
+                    android:id="@+id/image_view_product10"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/roxy" />
+
+                <TextView
+                    android:id="@+id/text_view_product_name10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Roxy Paint "
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_product_price10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="9,000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_quantity10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="50"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/text_view_product_description10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10gm white color"
+                    android:textSize="16sp" />
+
+                <CheckBox
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="#FFFFFF"
+                android:layout_marginEnd="8dp">
+                <ImageView
+                    android:id="@+id/image_view_shakib"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shakibadd1" />
+                <ImageView
+                    android:id="@+id/image_view_mojo"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mojo_gaza" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ListView
+        android:id="@+id/list_view_pro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontal_scroll_view_products"
+        android:layout_above="@id/image_view_container" />
+
+    <LinearLayout
+        android:id="@+id/image_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@android:color/transparent">
+
+        <ImageButton
+            android:id="@+id/image_view_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_login_24"
+            android:contentDescription="Login" />
+
+        <ImageButton
+            android:id="@+id/image_view_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_shopping_cart_24"
+            android:contentDescription="Cart" />
+
+        <ImageButton
+            android:id="@+id/image_view_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_account_circle_24"
+            android:contentDescription="Account" />
+
+        <ImageButton
+            android:id="@+id/image_view_about_us"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_info_24"
+            android:contentDescription="About Us" />
+    </LinearLayout>
+
+</RelativeLayout>
